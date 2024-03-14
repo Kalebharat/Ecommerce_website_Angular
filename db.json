@@ -1,0 +1,50 @@
+{
+  "Products": [
+    {
+      "productid": "1",
+      "productname": "smartPhone",
+      "productprice": 12909999,
+      "productcategory": "samsung",
+      "producturl": "assets/ph.jpeg",
+      "productdes": ": 17.25 cm (6.8 inch)",
+      "id": 1
+    },
+    {
+      "productid": "4",
+      "productname": "Dell",
+      "productprice": 20000,
+      "productcategory": "laptop",
+      "producturl": "https://5.imimg.com/data5/ECOM/Default/2024/1/373214312/JO/LU/BM/2894012/1qpfit7lompeg-fkgi2-3j19zimncbpy-250x250.jpg",
+      "productdes": "this is laptop smart",
+      "id": 4
+    },
+    {
+      "productid": "6",
+      "productname": "redme phone",
+      "productprice": 14000,
+      "productcategory": "smartphone",
+      "producturl": "https://i03.appmifile.com/799_item_in/04/01/2024/7b66930168d5b7b3c3d0cce70322e77b.jpg",
+      "productdes": "this is my good mobile",
+      "id": 5
+    },
+    {
+      "productid": "7",
+      "productname": "samsung",
+      "productprice": 25000,
+      "productcategory": "smartphone",
+      "producturl": "https://img.etimg.com/photo/msid-98945112,imgsize-13860/SamsungGalaxyS23Ultra.jpg",
+      "productdes": "this is mobile smart",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

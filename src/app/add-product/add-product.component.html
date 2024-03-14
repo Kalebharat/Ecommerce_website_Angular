@@ -1,0 +1,45 @@
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <a class="text-white" style="margin-left: 45%; text-decoration: none;">Add Product</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-3">
+            <div class="card ">
+                <form #addpro="ngForm" (ngSubmit)="getdata(addpro.value)">
+                    <div class="mb-2">
+                      <label for="exampleInputEmail1" class="form-label">product Id</label>
+                      <input type="text" class="form-control" name="productid" #productid="ngModel" ngModel required placeholder="Enter product id">
+                    </div>
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">product Name</label>
+                        <input type="text" class="form-control" name="productname" #productname="ngModel" ngModel required placeholder="Enter product name">
+                      </div>
+                      <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">product Price</label>
+                        <input type="number" class="form-control" name="productprice" #productprice="ngModel" ngModel required placeholder="Enter product price">
+                      </div>
+                      <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">product Category</label>
+                        <input type="text" class="form-control" name="productcategory" #productcategory="ngModel" ngModel required placeholder="Enter product category">
+                      </div>
+
+                      <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">product Url</label>
+                        <input type="text" class="form-control" name="producturl" #producturl="ngModel" ngModel required placeholder="Enter product url">
+                      </div>
+                      <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label">product Description</label>
+                        <textarea type="text" class="form-control" name="productdes" #productdes="ngModel" ngModel required placeholder="Enter product description"></textarea>
+                  <div class="button mt-3">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Product</button>&nbsp;
+                <button type="submit" routerLink="Viewproduct" class="btn btn-success">View Product</button>
+                  </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

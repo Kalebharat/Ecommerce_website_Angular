@@ -1,0 +1,38 @@
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <a class="text-white" style="margin-left: 45%; text-decoration: none;">View Product</a>
+        <button class="btn btn-success" routerLink="/">Back</button>
+    </div>
+</nav>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <table class="table">
+            <thead>
+              <tr class="table-secondary">
+                <th scope="col">productid</th>
+                <th scope="col">productname</th>
+                <th scope="col">productprice</th>
+                <th scope="col">productcategory</th>
+                <th scope="col">producturl</th>
+                <th scope="col">productdes</th>
+                <th scope="col">Action</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of products">
+                <th scope="row">{{p.productid}}</th>
+                <td>{{p.productname}}</td>
+                <td>{{p.productprice | currency:'INR'}}</td>
+                <td><img src={{p.producturl}} alt="" width="100" height="100"></td>
+                <td>{{p.productcategory}}</td>
+                <td>{{p.productdes}}</td>
+                <td><i routerLink="/update/{{p.id}}" class="fa-solid fa-user-pen text-primary"></i> &nbsp; <i class="fa-solid fa-trash text-danger" (click)="delproduct(p.id)"></i>
+                   </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+
